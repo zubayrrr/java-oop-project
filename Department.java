@@ -1,11 +1,14 @@
 package java_oops_project;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Department {
 	 
 	private String deptName;
 	private double budget;
 	
-	private Employee[] emps = new Employee[5];
+	// private Employee[] emps = new Employee[5];
+	private List<Employee> emps = new ArrayList<>();
 	private int emp = 0;
 	
 	
@@ -15,7 +18,7 @@ public class Department {
 	}
 	
 	public void addEmployee(Employee obj) {
-		emps[emp] = obj;
+		emps.add(obj);
 		emp++;
 		
 		if(obj.getGrade() >= 5) {
