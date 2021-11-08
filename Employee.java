@@ -14,7 +14,14 @@ public class Employee {
 		this.grade = grade;
 	}
 	
-	public String getEmpInfo() {
-		return empName + "( " + grade + ")";
+//	public String getEmpInfo() {
+//		return empName + "( " + grade + ")";
+//	}
+	
+	// whenever you print an object, toString is executed.
+	// basically overriding the "toString" of the Object class
+	public String toString() {
+		return empName + "(" + grade + ")";
+		
 	}
 }

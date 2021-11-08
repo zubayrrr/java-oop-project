@@ -32,9 +32,11 @@ public class Department {
 		String temp = "Dept Name: " + this.deptName + "\nBudget: " + this.budget + "\nEmployees: ";
 		
 		for(Employee x : emps) {
-			if(x != null) {
-				temp += x.getEmpInfo() + " ";
-			}
+			//if(x != null) {
+				temp += x + " ";
+			//}
+				
+		// when you print an object using toString, you don't explicitly have to call it.
 		}
 		
 		System.out.println(temp);
